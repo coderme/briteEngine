@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+    <title>Risks Manager</title>
+    <style>
+      html, body {
+        height: 100%;
+        overflow:visibile;
+      }
+      body > main {
+         margin: 3em .1em;
+         min-height: 40%;
+      }
+      
+      footer {
+         font-size: .7em;
+      }
+      .loading {
+         display: inline-block;
+         position: fixed;
+         bottom: 0;
+         right: 0;
+         font-weight: 900;
+         z-index: 1000;
+      }
+      
+
+    </style>
+  </head>
+  <body>
+
+
+
+<nav class="navbar navbar-dark bg-dark">
+<h4 class="text-primary" >Risks Manager</h4>
+</nav>
+
+<main class="content p-3" id="app">
+      
+<ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item">
+    <router-link class="nav-link text-primary" to="/">
+      <span class="badge badge-primary rounded-circle">1</span> Fields
+    </router-link>
+  </li>
+  
+  <li class="nav-item">
+    <router-link class="nav-link text-secondary" to="/risks-types">
+      <span class="badge badge-secondary rounded-circle">2</span> Risks Types
+    </router-link>
+  </li>
+
+
+  <li class="nav-item">
+    <router-link class="nav-link text-success" to="/risks">
+      <span class="badge badge-success rounded-circle">3</span> Risks
+    </router-link>
+  </li>
+
+  
+  
+</ul>
+
+<section class="my-3">
+
+<router-view></router-view>
+  
+</section>
+
+</main>
+
+<footer class="text-center">
+  <hr>
+  &copy2019 RisksManager
+
+</footer>
+
+    
+   
+    <script src="/static/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/vue.js"></script>
+    <script src="/static/js/vue-router.js"></script>
+    <script src="/static/js/vue-resource.js"></script>
+    
+    <!-- Vue Components -->
+    <script src="/static/js/components/fields.js"></script>
+    <script src="/static/js/components/risks-types.js"></script>
+    <script src="/static/js/components/risks.js"></script>
+
+    <!-- Vue main at last -->
+    <script src="/static/js/vue-main.js"></script>
+
+  </body>
+</html>
