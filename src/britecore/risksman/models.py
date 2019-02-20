@@ -97,7 +97,7 @@ class RiskFieldValue(models.Model):
         return self.value
 
     def __repr__(self):
-        return '%s:  %s'.format(
+        return '%s: %s'.format(
             self.field.title,
             self.value,
         )
