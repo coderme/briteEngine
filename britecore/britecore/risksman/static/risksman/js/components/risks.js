@@ -203,7 +203,8 @@ const Risks = {
    
     </div>
 
-<form @submit.prevent="openModalFor(risk)">
+<form v-if="risksTypes.length > 0"
+      @submit.prevent="openModalFor(risk)">
 <div class="form-row" 
      :class="{ 'justify-content-center text-center': risks.length === 0 }">
 
@@ -224,6 +225,7 @@ const Risks = {
 </div>
 </div>
 </form>
+
 <div class="modal fade" id="newRisk" tabindex="-1" role="dialog" aria-labelledby="newRiskModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">

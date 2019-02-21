@@ -1,6 +1,10 @@
 # BriteCore Engineering
 
-## Approch
+## Approach
+1. Break Data gathering process into smaller tasks.
+2. Make fields'types reusable on many risk types (implemented via Many to Many Model relation).
+3. Let the frontend (Vue) deals with displaying right HTML form fields.
+
 
 
 
