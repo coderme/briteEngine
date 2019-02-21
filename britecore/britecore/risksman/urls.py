@@ -14,7 +14,8 @@ router.register('api/v1/risks', v.RiskView)
 urlpatterns = [
     # rest_framework Generic views need to be registered individually
     # not in the router, otherwise you know what!
-    path('api/v1/fields-types/', v.RiskFieldView.as_view()),
+    path('api/v1/fields-types/',
+         v.RiskFieldView.as_view(), name='fields-types'),
     path('api/v1/risks-type-fields/<int:pk>/',
          v.SingleRiskTypeView.as_view()),
     # this is a dev env so the following seems *ok*
@@ -22,3 +23,5 @@ urlpatterns = [
     re_path(r'^$', v.HomeView.as_view(), name='home'),
     path('', include(router.urls)),
 ]
+
+print(router.urls)

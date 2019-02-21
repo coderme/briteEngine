@@ -6,6 +6,7 @@ const Risks = {
             newRisk : {
                 title: null,
                 insurer: null,
+                risk_type: 0,
                 values: []
             },
             risk: 0,
@@ -123,6 +124,7 @@ const Risks = {
         openModalFor(id){
             this.getFields(id);
             $('#newRisk').modal('show');
+            this.newRisk.risk_type = id;
         }
         
     },
@@ -235,7 +237,6 @@ const Risks = {
         </button>
       </div>
       <form v-on:submit.prevent="addRisk()">
-      <input type="hidden" v-model="newRisk.risk_type" :value="risk">
       <div class="modal-body">
                   <div class="form-group">
                     <label for="field-title">Title</label>

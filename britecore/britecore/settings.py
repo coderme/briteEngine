@@ -13,7 +13,10 @@ SECRET_KEY = ')o@whv*orvp+r_cdru)x+1bx$-rkx9fc1c&)jv@*y*3-7&46&)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'coderme.pythonanywhere.com',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -27,7 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
-    'django_extensions',
+    #'django_extensions',
 
     'britecore.risksman',
 ]
@@ -110,6 +113,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATIC_URL = '/static/'
 
 

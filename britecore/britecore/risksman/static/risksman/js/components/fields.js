@@ -183,7 +183,6 @@ const Fields = {
         </button>
       </div>
       <form v-on:submit.prevent="addField()">
-      <input type="hidden" v-model="newField.id">
       <div class="modal-body">
           <div class="form-group">
                 <label for="field-title">Title</label>
