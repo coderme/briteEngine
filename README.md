@@ -6,10 +6,20 @@
 
 ## Deploy
 * Create a new virtualenv
-`virtualenv -p python3.6 ENV`
+```bash
+virtualenv -p python3.6 ENV
+```
 * Activate the new virtual env.
-`source ENV/bin/activate`
+```bash
+source ENV/bin/activate
+```
 * Clone this repo into your preferred working directory.
-`git clone https://github.com/codermeorg/briteEngine.git`
+```bash
+git clone https://github.com/codermeorg/briteEngine.git
+```
+* Install the required python packages in requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 
