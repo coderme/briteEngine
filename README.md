@@ -2,8 +2,9 @@
 
 ## Approach
 1. Break Data gathering process into smaller tasks.
-2. Make fields'types reusable on many risk types (implemented via Many to Many Model relation).
-3. Let the frontend (Vue) deals with displaying right HTML form fields.
+3. Define presets of the allowed data types, like text, date, number, ..etc.
+2. Make field type into its own model so its reusable on many risk types (implemented via Many to Many Model relation).
+3. Let the frontend (Vue) deals with displaying the right HTML form fields.
 
 
 

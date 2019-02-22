@@ -23,5 +23,3 @@ urlpatterns = [
     re_path(r'^$', v.HomeView.as_view(), name='home'),
     path('', include(router.urls)),
 ]
-
-print(router.urls)
