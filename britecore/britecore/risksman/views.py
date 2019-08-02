@@ -90,4 +90,3 @@ class RiskView(viewsets.ModelViewSet):
 
     queryset = Risk.objects.all()
     serializer_class = RiskSerializer
-1
