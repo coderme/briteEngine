@@ -26,5 +26,6 @@ cd britecore
 ```bash
 ./manage.py runserver
 ```
-
+## Hosted
+https://coderme.pythonanywhere.com/
 
